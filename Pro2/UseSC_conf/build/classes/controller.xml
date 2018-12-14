@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<sc-configuration>
+    
+    <controller>
+       <action name="login" class="water.ustc.action.LoginAction" method="handleLogin">
+          <result name="success" type="forward" value="pages/welcome.jsp"></result>
+          <result name="failure" type="redirect" value="pages/login-failure.jsp"></result>
+       </action>
+       <action name="register" class="water.ustc.action.RegisterAction" method="handleRegister">
+          <result name="success" type="forward" value="login.jsp"></result>
+          <result name="failure" type="redirect" value="pages/register-failure.jsp"></result>
+       </action>
+    </controller>
+    
+</sc-configuration>
