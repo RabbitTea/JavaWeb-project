@@ -1,0 +1,4 @@
+1. SimpleController和UseSC对应，为e1要求的实现
+2. SimpleController_action和UseSC_conf对应，为e2要求的实现
+
+另：其余均为eX命名。
