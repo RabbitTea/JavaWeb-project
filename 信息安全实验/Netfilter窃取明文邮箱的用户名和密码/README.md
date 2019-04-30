@@ -90,7 +90,7 @@
 
        以科大邮箱为例，输入用户名和密码后使用wireshark进行抓包，提取出协议为HTTP的包。**注意这里一定要选对使用的网卡，我连的是无线网所以需要在cmd中用ipconfig命令查看无线网的网卡是什么。**抓到的包如下：
 
-       ![wireshark抓http包1](assets\wireshark抓http包1.jpg)
+       ![wireshark抓http包1](\assets\wireshark抓http包1.jpg)
 
        我们打开看一下HTTP请求中的具体内容，**找到用户名和密码所在的位置：**
 
