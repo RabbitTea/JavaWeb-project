@@ -94,17 +94,17 @@
 
        我们打开看一下HTTP请求中的具体内容，**找到用户名和密码所在的位置：**
 
-       ![wireshark抓http包2](assets\wireshark抓http包2.jpg)
+       ![wireshark抓http包2](assets/wireshark抓http包2.jpg)
 
        **注意中间标记的一行，Cookie中也保存有受害者输入的用户名uid，而我们要获取的是数据部分填写的uid和password，那么我们针对请求数据包获取数据时，应从Cookie后面的地址开始获取。**
 
        下面是我们尝试了cookie后面的不同字符串获取到的结果：
 
-       ![试验不同的用户名和密码查找位置](assets\试验不同的用户名和密码查找位置.png)
+       ![试验不同的用户名和密码查找位置](assets/试验不同的用户名和密码查找位置.png)
 
        再来看一下实际传送的数据包中的数据是如何表示的：
 
-       ![wireshark抓http包3](assets\wireshark抓http包3.jpg)
+       ![wireshark抓http包3](assets/wireshark抓http包3.jpg)
 
        可以看到真正的数据部分包含了很多数据，这里我们只需要获取`uid`和`password`即可，**注意到这里还有&符号，我们可以利用它找到结束位置，获取字符串长度。**
 
@@ -314,4 +314,4 @@
 
 最后说一下简单的实验步骤：
 
-![实验步骤](assets\实验步骤.jpg)
+![实验步骤](assets/实验步骤.jpg)
